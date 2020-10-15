@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: The Gen Z 
+title: The Gen Z agency she tells you not to worry about
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+subheading: Welcome to Trend Z, where brands and gen z meet. I’m Jimmy & I’ll be your host as you scroll through our website.
 mainpitch:
   title: Why Kaldi
   description: >

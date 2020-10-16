@@ -6,6 +6,11 @@ heading: Great coffee with a conscience
 subheading: Welcome to Trend Z, where brands and gen z meet. I’m Jimmy & I’ll be
   your host as you scroll through our website.
 mission: Our Process and Mission
+missionDescription: We do things differently than most marketing agencies. As we
+  like to say, “Our marketing is so different that it works. Like pineapple on
+  pizza.” We want to work with brands that are ready to embrace marketing of the
+  future. “But Jimmy, what is marketing of the future?” Great question, Check
+  out the services below for a better idea.
 mainpitch:
   title: Why Kaldi
   description: >

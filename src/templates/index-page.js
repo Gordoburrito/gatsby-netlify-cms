@@ -5,12 +5,15 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import contactInfo from '../../site/settings/contact_info.json'
 
 export const IndexPageTemplate = ({
   image,
   title,
   heading,
   subheading,
+  mission,
+  missionDescription,
   mainpitch,
   description,
   intro,
@@ -29,6 +32,8 @@ export const IndexPageTemplate = ({
               }}
             >
               {title}
+              {contactInfo.phone}
+              
             </h1>
             <h3
               className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
@@ -58,10 +63,10 @@ export const IndexPageTemplate = ({
               <div className="content">
                 <div className="content">
                   <div className="tile">
-                    <h1 className="title">mainpitch.title</h1>
+                    <h1 className="title">{mission}</h1>
                   </div>
                   <div className="tile">
-                    <h3 className="subtitle">mainpitch.description</h3>
+                    <h3 className="subtitle">{missionDescription}</h3>
                   </div>
                 </div>
                 <div className="columns">
@@ -105,6 +110,8 @@ IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
+  mission: PropTypes.string,
+  missionDescription: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
   intro: PropTypes.shape({
@@ -114,7 +121,7 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
+  
   return (
     <Layout>
       <IndexPageTemplate
@@ -122,6 +129,8 @@ const IndexPage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
+        mission={frontmatter.mission}
+        missionDescription={frontmatter.missionDescription}
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
@@ -173,6 +182,8 @@ export const pageQuery = graphql`
           heading
           description
         }
+        mission
+        missionDescription
       }
     }
   }

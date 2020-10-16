@@ -26,7 +26,23 @@ collections:
       - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-
+  - name: "settings"
+    label: "Settings"
+    files:
+      - label: "Contact Info"
+        name: contact_info
+        file: site/settings/contact_info.json
+        fields:
+          - {label: "Phone", name: "phone", widget: "string", required: false}
+          - {label: "Email", name: "email", widget: "string"}
+          - label: Address
+            name: "address"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Street", name: "street", widget: "string"}
+              - {label: "Street2", name: "street2", widget: "string", required: false}
+              - {label: "City", name: "city", widget: "string"}
   - name: "pages"
     label: "Pages"
     create: true
@@ -40,6 +56,8 @@ collections:
           - {label: Image, name: image, widget: image}
           - {label: Heading, name: heading, widget: string}
           - {label: Subheading, name: subheading, widget: string}
+          - {label: Mission, name: mission, widget: string}
+          - {label: "Mission Description", name: missionDescription, widget: string}
           - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
           - {label: Description, name: description, widget: string}
           - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}

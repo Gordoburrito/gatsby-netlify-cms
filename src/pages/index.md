@@ -55,6 +55,9 @@ intro:
         coffee making techniques. All of the artwork on display there is for
         sale. The full price you pay goes to the artist.
       title: blurb.title
+    - image: /img/coffee-gear.png
+      title: Only the best
+      text: You are my sunshine my only sunshine
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their

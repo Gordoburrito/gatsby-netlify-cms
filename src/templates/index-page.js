@@ -4,7 +4,7 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
+// import BlogRoll from '../components/BlogRoll'
 import contactInfo from '../../site/settings/contact_info.json'
 
 export const IndexPageTemplate = ({
@@ -32,7 +32,6 @@ export const IndexPageTemplate = ({
               }}
             >
               {title}
-              {contactInfo.phone}
             </h1>
             <h3
               className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
@@ -68,33 +67,17 @@ export const IndexPageTemplate = ({
                     <h3 className="subtitle">{missionDescription}</h3>
                   </div>
                 </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
                 <Features gridItems={intro.blurbs} />
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
+                  {/* <BlogRoll /> */}
+                  <span>
+
+                  </span>
+
+                  
+                    <Link className="services-link"to="/blog">
+                      More about our Services &rarr;
                     </Link>
-                  </div>
-                </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
-                  </div>
-                </div>
+                    
               </div>
             </div>
           </div>

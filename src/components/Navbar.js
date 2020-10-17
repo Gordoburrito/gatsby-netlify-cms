@@ -2,6 +2,10 @@ import React from 'react'
 import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'
+import instagram from '../img/instagram.svg'
+import facebook from '../img/facebook.svg'
+import tiktok from '../img/tiktok.svg'
+
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -31,11 +35,12 @@ const Navbar = class extends React.Component {
       }
     )
   }
-
+//mix-blend-mode: exclusion;
+//took out mix bar you should push as well!
   render() {
     return (
       <nav
-        className="navbar is-transparent"
+        className="navbar"
         role="navigation"
         aria-label="main-navigation"
       >
@@ -85,6 +90,36 @@ const Navbar = class extends React.Component {
               >
                 <span className="icon">
                   <img src={github} alt="Github" />
+                </span>
+              </a>
+              <a
+                className="navbar-item"
+                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="icon">
+                  <img src={tiktok} alt="TikTok" />
+                </span>
+              </a>
+              <a
+                className="navbar-item"
+                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="icon">
+                  <img src={instagram} alt="Instagram" />
+                </span>
+              </a>
+              <a
+                className="navbar-item"
+                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="icon">
+                  <img src={facebook} alt="Facebook" />
                 </span>
               </a>
             </div>

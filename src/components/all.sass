@@ -9,11 +9,127 @@ $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #2b2523
+$trendz-gradient: linear-gradient(90deg, #370617, purple, #ee6352);
+
+.feature__container
+  margin-top: -15px
+  margin-left: 12.5vw
+
+.line
+  margin: 1.90476vw 0 0
+  width: 8.92857vw
+  height: .35714vw
+  background: black
+
+.features-grid
+  display:flex
+  justify-content: space-between
+
+.feature-blurb__section
+  width: 17vw
+  max-width: 315px
+
+.feature-blurb
+  padding-left: 0 !important
+
+.process__heading
+  max-width: 600px
+
+.process__description
+  width: 45vw
+  max-width: 750px
+  margin-bottom: 7rem
+
+.heading--twenties
+  font-size: 5.35714vw !important
+  font-weight: 700
+  line-height: 4.88095vw !important
+  color: black
+
+.default--twenties
+  font-size: 1.25rem
+  font-weight: 300
+
+
+@keyframes bg-animation
+  0%
+    background-position: left
+  100%
+    background-position: right
+
+.more-services__link
+  background-image: $trendz-gradient
+  background-clip: text
+  background-position: left
+  background-size: 400%
+  color: transparent !important
+  transition: background-position 500ms
+  font-size: 2rem
+  display: flex
+  align-items: center
+
+.more-services__link:hover
+  background-position: right
+
+.arrow--circle
+    background-image: $trendz-gradient
+    background-size: 400%
+    background-position: left
+    transition: background-position 500ms
+    color: transparent
+    text-decoration:none
+    border-radius: 50%
+    display: flex
+    height: 2rem
+    width: 2rem
+    margin-right: .5rem
+    align-items: center
+    justify-content: center
+    
+
+.more-services__link:hover > .arrow--circle
+    background-image: $trendz-gradient
+    color: transparent !important
+    background-position: right
+
+.arrow--circle::after 
+    content: "\2192"
+    display: block
+    color: white
+    font-weight: bold
+    font-size: 1.5rem
+    text-align: center
+
+.arrow
+    transform: scale(0.6)
+    opacity: 0
+    transition: 250ms opacity, 400ms transform
+    background: #4679BD
+    text-decoration:none
+    border-radius: 50%
+    display: block
+    height: 2rem
+    width: 2rem
+    margin-left: .5rem
+
+.arrow::after 
+    content: "\2191"
+    display: block
+    color: white
+    font-weight: bold
+    font-size: 1.5rem
+    text-align: center
 
 .services-link
-  background-color: $primary
-  
+  display: flex
+  align-content: center
+  background-image: $trendz-gradient
+  background-clip: text
+  color: transparent
 
+.services-link:hover > .arrow
+  opacity: 1
+  transform: scale(1)
 .navbar .navbar-menu
   box-shadow:none !important
 

@@ -18,32 +18,26 @@ export const IndexPageTemplate = ({
   description,
   intro,
 }) => (
-  <div>
-      <div className= "container">
+  <div className="container">
+      <div className= "section">
         <div className="columns">
           <div 
-              className="column is-6 is-offset-1"
-  
+              className="hero column is-6 is-offset-1"
               >
             <h1
-              className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-              style={{
-                color: 'black',
-              }}
+              className="heading--twenties"
             >
               {title}
+
             </h1>
-            <h3
-              className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-              style={{
-                color: 'black',
-              }}
+            <p
+              className="default--twenties column is-10"
             >
               {subheading}
-            </h3>
+            </p>
           </div>
           <div
-            className="column"
+            className="column is-4 is-offset-1"
             style={{
               backgroundImage: `url(${
                 !!image.childImageSharp ? image.childImageSharp.fluid.src : image
@@ -53,32 +47,27 @@ export const IndexPageTemplate = ({
           </div>
       </div>
     </div>
-    <section className="section section--gradient">
+    <section className="">
       <div className="container">
         <div className="section">
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mission}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{missionDescription}</h3>
-                  </div>
+              <div className="process__heading">
+                <h1 className="heading--twenties">{mission}</h1>
+              </div>
+              <div className="line"></div>
+              <div className="feature__container">     
+                <div className="process__description">
+                  <p className="default--twenties">{missionDescription}</p>
                 </div>
                 <Features gridItems={intro.blurbs} />
-                  {/* <BlogRoll /> */}
-                  <span>
-
-                  </span>
-
-                  
-                    <Link className="services-link"to="/blog">
-                      More about our Services &rarr;
-                    </Link>
-                    
+                <Link className="more-services__link" to="/blog">
+                  <span className="arrow--circle" ></span>
+                  <span>Services</span> 
+                </Link>
               </div>
+              {/* <BlogRoll /> */}
+
             </div>
           </div>
         </div>

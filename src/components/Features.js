@@ -13,7 +13,7 @@ const FeatureGrid = ({ gridItems }) => (
             </div>
           </div>
            <h3 className="feature-blurb__title">{item.title}</h3>
-          <p className="feature-blurb__text">{item.text}</p>
+          <p className="feature-blurb__text default--twenties">{item.text}</p>
         </section>
       </div>
     ))}

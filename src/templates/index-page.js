@@ -18,7 +18,7 @@ export const IndexPageTemplate = ({
   description,
   intro,
 }) => (
-  <div className="container">
+  <div className="hero-section container">
       <div className= "section">
         <div className="columns">
           <div 
@@ -48,7 +48,7 @@ export const IndexPageTemplate = ({
       </div>
     </div>
     <section className="">
-      <div className="container">
+      <div className="mission-section container">
         <div className="section">
           <div className="columns">
             <div className="column is-10 is-offset-1">
@@ -61,10 +61,12 @@ export const IndexPageTemplate = ({
                   <p className="default--twenties">{missionDescription}</p>
                 </div>
                 <Features gridItems={intro.blurbs} />
-                <Link className="more-services__link" to="/blog">
-                  <span className="arrow--circle" ></span>
-                  <span>Services</span> 
-                </Link>
+                <div>
+                  <Link className="more-services__link" to="/blog">
+                    <span className="arrow--circle" ></span>
+                    <span className="default--twenties">Services</span> 
+                  </Link>
+                </div>
               </div>
               {/* <BlogRoll /> */}
 

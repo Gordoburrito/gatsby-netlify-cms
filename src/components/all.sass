@@ -2,7 +2,7 @@
 
 // Config vars
 // Kaldi logo brand color: #FD461E
-$kaldi-red: #D64000
+$kaldi-red: black
 $kaldi-red-invert: #fff
 
 $primary: $kaldi-red
@@ -11,15 +11,42 @@ $body-color: #333
 $black: #2b2523
 $trendz-gradient: linear-gradient(90deg, #370617, purple, #ee6352);
 
+//make navbar go up and down on scroll
+.navbar
+  background-color: transparent !important
+  position: fixed !important
+  width: 100%
+  padding: 10px
+  position: fixed
+  top: 0
+  transition: top 0.6s
+
+.navbar--hidden
+  top: -50px
+
+
+//contact from
+.field
+  font-size: 5.35714vw;
+  line-height: 4.88095vw;
+  letter-spacing: -.14881vw;
+  font-weight: 700;
+
+
+//footer
+
+.footer__navbar-item
+  color:black
+  font-size: 5.35714vw
+  line-height: 4.88095vw
+  letter-spacing: -.14881vw
+  font-weight: 700
+
 .mission-section
   padding: calc(10px + 10.29762vw) 0 0
 
 .hero-section
   padding: calc(10px + 10.29762vw) 0 0
-
-.feature__container
-  margin-top: -15px
-  margin-left: 12.5vw
 
 .line
   margin: 1.90476vw 0 0
@@ -27,22 +54,29 @@ $trendz-gradient: linear-gradient(90deg, #370617, purple, #ee6352);
   height: .35714vw
   background: black
 
+//features
+
+.feature__container
+  margin-top: -15px
+  margin-left: 12.5vw
+
 .features-grid
   display:flex
   justify-content: space-between
 
-.feature-blurb__section
-  width: 17vw
-  max-width: 315px
+@media (min-width: 1000px)
+  .feature-blurb__section
+    width: 17vw
+    max-width: 315px
 
 .feature-blurb
   padding-left: 0 !important
+  max-width: 45vw
 
 .feature-blurb__title
   font-size: 30px
   line-height: 36px
   padding: 30px 0px
-
 
 .process__heading
   max-width: 600px
@@ -145,8 +179,7 @@ $trendz-gradient: linear-gradient(90deg, #370617, purple, #ee6352);
 .services-link:hover > .arrow
   opacity: 1
   transform: scale(1)
-.navbar .navbar-menu
-  box-shadow:none !important
+
 
 .content .taglist
   list-style: none
@@ -208,13 +241,16 @@ $trendz-gradient: linear-gradient(90deg, #370617, purple, #ee6352);
 
 .navbar-item .icon
   color: $primary
+
 // Override for use of svg's from https://simpleicons.org/
 .icon svg
   width: 1.5rem
   height: 1.5rem
   fill: currentColor
+
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
+
 footer.footer
   padding: 3rem 0rem 0rem
   background-color: transparent

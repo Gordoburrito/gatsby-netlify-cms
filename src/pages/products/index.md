@@ -97,4 +97,6 @@ pricing:
 faq:
   - question: Question
     answer: Answer
+  - question: question2
+    answer: answer 2222
 ---

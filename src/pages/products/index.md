@@ -95,8 +95,27 @@ pricing:
       plan: Custom
       price: ??
 faq:
-  - question: Question
-    answer: Answer
-  - question: question2
-    answer: answer 2222
+  - question: Are you guys not professional?
+    answer: Yes, we are professional. We truly are. We just like to make our work
+      enjoyable and want you to get a sense of our personality. Gen Z marketing
+      isn’t for everyone, and we know that. We want to work with those willing
+      to be different and unique. But let’s find a time to call and we promise
+      you’ll experience the utmost respect and professionalism.
+  - question: What are Memes?
+    answer: Great question. Memes take photos and add some sort of text or message
+      to them. Here are a couple of examples of brands that use memes
+      effectively (Gordon, show SlimJims, Chipotle, Gushers, Sparknotes,
+      etchere).
+  - question: Do you offer full-agency services?
+    answer: Great question and I have the WORST answer for you. It depends. Imagine
+      if Starbucks came and asked to work with them on Social Media management,
+      do you think it would be the same for a local coffee shop? Unfortunately
+      not. But we are VERY transparent with our pricing. Screw companies that
+      take advantage of you. We are open and honest with what we charge.
+  - question: Am I locked into a contract if we work together?
+    answer: Yes and no. We truly do work by honesty, integrity, and trust. And we
+      like our clients to do the same. While we do have contracts, you’ll never
+      be fully locked in to it. If special circumstances arise, we will be as
+      flexible as possible to keep you happy. But we like our deals to be at
+      least 6-months.
 ---

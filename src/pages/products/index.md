@@ -112,6 +112,12 @@ faq:
       do you think it would be the same for a local coffee shop? Unfortunately
       not. But we are VERY transparent with our pricing. Screw companies that
       take advantage of you. We are open and honest with what we charge.
+  - question: How much do you charge for your services?
+    answer: Great question and I have the WORST answer for you. It depends. Imagine
+      if Starbucks came and asked to work with them on Social Media management,
+      do you think it would be the same for a local coffee shop? Unfortunately
+      not. But we are VERY transparent with our pricing. Screw companies that
+      take advantage of you. We are open and honest with what we charge.
   - question: Am I locked into a contract if we work together?
     answer: Yes and no. We truly do work by honesty, integrity, and trust. And we
       like our clients to do the same. While we do have contracts, you’ll never
